@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles.css" />
+		<title><%= title %></title>
+	</head>
+	<body>
+		<form method="POST" action="/new">
+			<p>Post a message</p>
+			<label for="userName">Username</label>
+			<input id="userName" name="userName" type="text" />
+
+			<label for="messageText">Message</label>
+			<textarea id="messageText" name="messageText"></textarea>
+
+			<button type="button" onclick="window.location.href = '/'">Cancel</button>
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+:root {
+	--text-color: rgb(0, 255, 0);
+	--background: black;
+}
+
+body {
+	color: var(--text-color);
+	font-size: 18px;
+	background-color: var(--background);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+input,
+textarea {
+	background-color: var(--background);
+	border: 1px solid var(--text-color);
+	color: var(--text-color);
+}
+
+button {
+	background-color: var(--background);
+	border: 1px solid var(--text-color);
+	color: var(--text-color);
+	cursor: pointer;
+}
+
+.msgContainer {
+	border: 1px solid var(--text-color);
+	max-width: 350px;
+}
+
+.msg {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	border-bottom: 1px solid var(--text-color);
+	padding: 8px;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+form {
+	max-width: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+textarea {
+	resize: none;
+}
+
+a {
+	color: rgb(1, 77, 1);
+}
