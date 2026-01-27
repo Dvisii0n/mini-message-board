@@ -22,6 +22,11 @@ app.use((req, res) => {
 	res.status(404).render("404");
 });
 
+app.use((err, req, res, next) => {
+	console.error(err);
+	res.status(500).send("Error 500 Internal Server Error");
+});
+
 app.listen(PORT, (error) => {
 	if (error) {
 		throw error;
